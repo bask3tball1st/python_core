@@ -1,11 +1,13 @@
-secret_count = 37
+secret_number = 37
+guessed_number = 0
 count = 0
-while count != secret_count:
-    count = int(input("Enter the number: "))
-    if count == secret_count:
-        print("You successfully guessed the number")
+while guessed_number != secret_number:
+    guessed_number = int(input("Enter the number: "))
+    count += 1
+    if guessed_number == secret_number:
+        print("You successfully guessed the number! Attempts: " + str(count))
         break
-    elif count > secret_count:
+    elif guessed_number > secret_number:
         print("You guessed too high")
-    elif count < secret_count:
+    elif guessed_number < secret_number:
         print("You guessed too low")
