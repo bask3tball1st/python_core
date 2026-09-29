@@ -1,5 +1,6 @@
 def get_test_statistics(results):
-    res_count = dict.fromkeys(results, 0)
+    result_status = ["PASS", "FAIL", "SKIP"]
+    res_count = dict.fromkeys(result_status, 0)
     for i in range(len(results)):
         if results[i] == "PASS":
             res_count[results[i]] += 1
