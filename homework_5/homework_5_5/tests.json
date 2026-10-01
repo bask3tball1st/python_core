@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Login",
+    "status": "PASS",
+    "duration": 2.2
+  },
+  {
+    "name": "Logout",
+    "status": "PASS",
+    "duration": 0.5
+  },
+  {
+    "name": "Registration",
+    "status": "FAIL",
+    "duration": 3.7
+  },
+  {
+    "name": "Profile",
+    "status": "PASS",
+    "duration": 0.8
+  },
+  {
+    "name": "Payment",
+    "status": "SKIP",
+    "duration": 0.1
+  },
+  {
+    "name": "Search",
+    "status": "FAIL",
+    "duration": 1.7
+  }
+]

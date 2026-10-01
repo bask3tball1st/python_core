@@ -1,0 +1,6 @@
+Login PASS 2.2
+Logout PASS 0.5
+Registration FAIL 3.7
+Profile PASS 0.8
+Payment SKIP 0.1
+Search FAIL 1.7
