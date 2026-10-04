@@ -8,16 +8,14 @@ try:
                 even_numbers.append(number)
             else:
                 odd_numbers.append(number)
-    if len(even_numbers) > 0:
-        with open('file_4.2.1.txt', 'w') as file1:
-            for number in even_numbers:
-                file1.write(str(number) + "\n")
-            print("Файл с четными числами записан!")
-    if len(odd_numbers) > 0:
-        with open('file_4.2.2.txt', 'w') as file2:
-            for number in odd_numbers:
-                file2.write(str(number) + "\n")
-            print("Файл с нечетными числами записан!")
+    with open('file_4.2.1.txt', 'w') as file1:
+        for number in even_numbers:
+            file1.write(str(number) + "\n")
+        print("Файл с четными числами записан!")
+    with open('file_4.2.2.txt', 'w') as file2:
+        for number in odd_numbers:
+            file2.write(str(number) + "\n")
+        print("Файл с нечетными числами записан!")
 except FileNotFoundError:
     print("Файл не найден!")
 except ValueError:
@@ -26,4 +24,3 @@ except ValueError:
         file1.write("")
     with open('file_4.2.2.txt', 'w') as file2:
         file2.write("")
-
