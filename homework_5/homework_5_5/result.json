@@ -8,7 +8,10 @@
             "Registration",
             "Search"
         ],
-        "Max duration": 3.7,
+        "Max duration test": {
+            "name": "Registration",
+            "duration": 3.7
+        },
         "Total duration": 9.0
     }
 ]

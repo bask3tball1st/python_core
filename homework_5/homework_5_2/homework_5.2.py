@@ -4,7 +4,7 @@ def print_users(users_dict):
     print("Информация о пользователях")
     for user in users_dict:
         if "login" not in user or "password" not in user or "is_authorize" not in user:
-            raise ValueError(f"Отсутсвует обязательное поле у пользователя {user["login"]}!")
+            raise ValueError(f"Отсутсвует обязательное поле у пользователя: {user}")
         print("---------------------------")
         print("Пользователь", user["login"])
         print("Логин:", user["login"])

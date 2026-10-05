@@ -13,7 +13,7 @@ def results_list(json_data):
     skipped_tests = list(filter(lambda test: test["status"] == "SKIP", json_data))
     total_count_tests = len(json_data)
     failed_tests_name = list(map(lambda test: test["name"], failed_tests))
-    max_duration = max(map(lambda test: test["duration"], json_data))
+    max_duration_test = max(json_data, key=lambda test: test["duration"])
     total_duration = reduce(counting_duration, json_data, 0.0)
     results = [
         {
@@ -22,7 +22,7 @@ def results_list(json_data):
             "Number of tests failed": len(failed_tests),
             "Number of tests skipped": len(skipped_tests),
             "List of failed tests": failed_tests_name,
-            "Max duration": max_duration,
+            "Max duration test": { "name": max_duration_test["name"], "duration": max_duration_test["duration"] },
             "Total duration": total_duration,
         }
     ]
