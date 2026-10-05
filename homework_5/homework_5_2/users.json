@@ -1,0 +1,27 @@
+[
+  {
+    "login": "user1",
+    "password": "password1",
+    "is_authorize": "PASS"
+  },
+  {
+    "login": "user2",
+    "password": "password2",
+    "is_authorize": "PASS"
+  },
+  {
+    "login": "user3",
+    "password": "password3",
+    "is_authorize": "FAIL"
+  },
+  {
+    "login": "user4",
+    "password": "password4",
+    "is_authorize": "PASS"
+  },
+  {
+    "login": "user5",
+    "password": "password5",
+    "is_authorize": "FAIL"
+  }
+]

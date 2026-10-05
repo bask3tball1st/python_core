@@ -1,0 +1,17 @@
+[
+    {
+        "Total number of tests": 6,
+        "Number of tests passed": 3,
+        "Number of tests failed": 2,
+        "Number of tests skipped": 1,
+        "List of failed tests": [
+            "Registration",
+            "Search"
+        ],
+        "Max duration test": {
+            "name": "Registration",
+            "duration": 3.7
+        },
+        "Total duration": 9.0
+    }
+]
