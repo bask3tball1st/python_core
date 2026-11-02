@@ -17,10 +17,13 @@ class Therapist(Doctor):
     def doctor_prescription(code):
         if code == 1:
             Patient.doctor = Surgeon()
+            Patient.doctor.treat()
         elif code == 2:
             Patient.doctor = Dentist()
+            Patient.doctor.treat()
         else:
             Patient.doctor = Therapist()
+            Patient.doctor.treat()
         return Patient.doctor
 
 class Patient:
@@ -32,6 +35,3 @@ class Patient:
 patient1 = Patient(1)
 patient2 = Patient(2)
 patient3 = Patient(3)
-patient1.doctor.treat()
-patient2.doctor.treat()
-patient3.doctor.treat()
